@@ -7,7 +7,7 @@ class Solution {
         int len = s.length();
         int sub_i = 0, sub_j = 0;
 
-        // 先把长度为 1 和 子串都初始化
+        // 先把长度为 1 和 2 子串都初始化
         for(int i = 0; i < len; i++){
             dp[i][i] = 1;
             if(i!=len-1){
