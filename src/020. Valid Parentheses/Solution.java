@@ -10,9 +10,9 @@ class Solution {
                 case '[': stack.add('[');break;
                 default: {
                     if(stack.empty()) return false;
-                    if(c == '(') c = ')';
-                    if(c == '[') c = ']';
-                    if(c == '{') c = '}';
+                    if(c == ')') c = '(';
+                    if(c == ']') c = '[';
+                    if(c == '}') c = '{';
                     if(stack.peek() != c) return false;
                     else stack.pop();
                 }

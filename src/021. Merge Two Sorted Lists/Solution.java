@@ -8,7 +8,6 @@
  **/
 class Solution {
     public ListNode mergeTwoLists(ListNode l1, ListNode l2) {
-        // java 引用的原因，要保留一个 head 节点不被覆盖
         ListNode head = new ListNode(0);
         ListNode temp = head;
         while (l1 != null && l2 != null) {
